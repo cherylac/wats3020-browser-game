@@ -64,8 +64,6 @@ class TicTacToe {
         ];
     }
 
-    // This `checkForWinner()` method is provided for you, but you must fill in
-    // the event dispatch lines that cause the end game screens to show.
     checkForWinner(){
         console.log('Checking for winner.');
         for (let condition of this.winStates){
@@ -81,7 +79,6 @@ class TicTacToe {
                 this.gameStatus = 'won';
                 this.winner = this.currentPlayer;
 
-                
                 let winEvent = new Event('win');
                 document.dispatchEvent(winEvent);
                 return true; // Return a value to stop processing the additional move count check.
@@ -103,7 +100,6 @@ class TicTacToe {
         console.log('Recording Player Move.');
         // This method handles recording a move in the `this.gameState` property.
         // To record a move, we must accmoplish the following:
-
         // 1. Find the X, Y coordinates of the tile that was just selected
         // 2. Claim that tile in the `this.gameState` array
         // 3. Set the class attribute of the tile to reflect which player has claimed it
@@ -220,14 +216,10 @@ document.addEventListener('DOMContentLoaded', function(event){
         game.start();
     });
         
-
-        
-
     // NOTE: End of the `startButton` event listener here.
      
 })
   
-
 // NOTE: End of the "DOMContentLoaded" event listener here.
 
 
