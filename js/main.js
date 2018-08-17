@@ -107,7 +107,7 @@ class TicTacToe {
 
            
             let drawEvent = new Event('draw');
-            document.dispatchEvent(drawEvent');
+            document.dispatchEvent(drawEvent);
         }
     }
 
